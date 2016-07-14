@@ -1,3 +1,4 @@
+#vue + webpack +vue-router +vux
 
 #npm install
 
