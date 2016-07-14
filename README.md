@@ -1,4 +1,6 @@
-vue + webpack +vue-router+vux 单页应用
+vue + webpack +vue-router 单页应用
+
+![image](https://github.com/eltonchan/vueApp/blob/master/src/assets/images/vue.gif)
 
 #安装
 
@@ -8,4 +10,4 @@ vue + webpack +vue-router+vux 单页应用
 
 #$ node server.js
 
-![image](https://github.com/eltonchan/vueApp/blob/master/src/assets/images/vue.gif)
+
