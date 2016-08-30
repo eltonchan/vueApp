@@ -103,7 +103,7 @@
                 background-image: url("../assets/images/search_icon.png");
                 background-position: center;
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size: 17px;
                 background-color: #f3f3f3;
                 border-radius: 3px;
                 margin-left: 10px;
