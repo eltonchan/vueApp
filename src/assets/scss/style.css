@@ -1,8 +1,9 @@
 header{
-    position: fixed;
+    position: absolute;
     background: transparent;
     z-index: 100;
     left: 0;
+    right:0;
     top:0;
 }
 .header_inner{
@@ -77,7 +78,7 @@ nav ul li a{
 }
 
 
-/*¹ı¶É*/
+/*è¿‡æ¸¡*/
 .expand-transition {
     transition: transform .2s ease;
     -webkit-transition: transform .2s ease;
@@ -85,8 +86,8 @@ nav ul li a{
     -webkit-transform: translateX(0);
 }
 
-/* .expand-enter ¶¨Òå½øÈëµÄ¿ªÊ¼×´Ì¬ */
-/* .expand-leave ¶¨ÒåÀë¿ªµÄ½áÊø×´Ì¬ */
+/* .expand-enter å®šä¹‰è¿›å…¥çš„å¼€å§‹çŠ¶æ€ */
+/* .expand-leave å®šä¹‰ç¦»å¼€çš„ç»“æŸçŠ¶æ€ */
 .expand-enter{
     -webkit-transform: translateX(100%);
 }
