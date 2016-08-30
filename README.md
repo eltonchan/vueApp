@@ -1,7 +1,7 @@
 
-# 基于vue 的豆瓣 手机站
+## 基于vue 的豆瓣 手机站
 
-#线上访问地址：www.jimstyle.cn
+## 线上访问地址：www.jimstyle.cn
 
 
 
