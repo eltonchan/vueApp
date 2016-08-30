@@ -32,6 +32,7 @@ if (isProduction()) {
     cdnPrefix = "";
     publishPath = cdnPrefix;
 }
+
 //编译输出路径
 module.exports = {
     debug: true,

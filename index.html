@@ -1,67 +1,37 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <title>Vue App</title>
+    <meta charset="utf-8">    <title>Vue douban</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <script>
+        (function() {
+            var baseFontSize = 50;
+            var baseWidth = 320;
+            var clientWidth = document.documentElement.clientWidth || window.innerWidth;
+            var innerWidth = Math.max(Math.min(clientWidth, 480), 320);
+            var rem = 50;
+            if (innerWidth > 362 && innerWidth <= 375) {
+                rem = Math.floor(innerWidth / baseWidth * baseFontSize * 0.9);
+            }
+            if (innerWidth > 375) {
+                rem = Math.floor(innerWidth / baseWidth * baseFontSize * 0.84);
+            }
+            window.__baseREM = rem;
+            document.querySelector('html').style.fontSize = rem + 'px';
+        }());
+    </script>
     <link rel="stylesheet" href="/dist/style.css">
 </head>
 
 <body>
-    <div id="app">
-        <header>
-            <div class="back">
-                <a href="javascript:history.go(-1)">
-                    <img src="./src/assets/images/back.png" alt="">
-                </a>
-            </div>
-            <h2>{{$route.name}}</h2>
-        </header>
-        <router-view></router-view>
-        <footer id="foot">
-            <ul>
-                <li>
-                    <a v-link="{ path: '/' }">
-                        <div class="icon home">
-                            <img src="./src/assets/images/home-on.png" v-if="$route.name==='home'">
-                            <img src="./src/assets/images/home.png"  v-else />
-                        </div>
-                        <p :class="$route.name==='home'? 'on': '' ">首页</p>
-                    </a>
-                </li>
-                <li>
-                    <a v-link="{ path: '/sort' }">
-                        <div class="icon home">
-                            <img src="./src/assets/images/fenlei-on.png" v-if="$route.name==='sort'">
-                            <img src="./src/assets/images/fenlei.png" v-else />
-                        </div>
-                        <p :class="$route.name==='sort'? 'on': '' ">分类</p>
-                    </a>
-                </li>
-                <li>
-                    <a v-link="{ path: '/cart' }">
-                        <div class="icon home">
-                            <img src="./src/assets/images/gouwuche-on.png" v-if="$route.name==='cart'">
-                            <img src="./src/assets/images/gouwuche.png" v-else />
-                        </div>
-                        <p :class="$route.name==='cart'? 'on': '' ">购物车</p>
-                    </a>
-                </li>
-                <li>
-                    <a v-link="{ path: '/me' }">
-                        <div class="icon home">
-                            <img src="./src/assets/images/me-on.png" v-if="$route.name==='me'">
-                            <img src="./src/assets/images/me.png" v-else />
-                        </div>
-                        <p :class="$route.name==='me'? 'on': '' ">我的</p>
-                    </a>
-                </li>
-            </ul>
-        </footer>
+    <div id="app" class="app">
+        <nv-head></nv-head>
+        <div id="main" class="main">
+            <router-view></router-view>
+        </div>
     </div>
     <script src="/dist/common.js"></script>
     <script src="/dist/build.js"></script>

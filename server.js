@@ -7,11 +7,11 @@ config.entry.unshift('webpack-dev-server/client?http://localhost:8090', "webpack
 config.plugins.push(new webpack.HotModuleReplacementPlugin());
 
 var proxy = [{
-    path: "/api/*",
-    target: "",
-    host: ""
+    path: "",
+    target: "http://www.jimstyle.cn/",
+    host: "http://www.jimstyle.cn/"
 }];
-//启动服务
+
 var app = new WebpackDevServer(webpack(config), {
     publicPath: config.output.publicPath,
     hot:true,
