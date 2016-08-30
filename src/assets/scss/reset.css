@@ -27,9 +27,12 @@ body {
     margin: 0 auto;
     height: 100%;
     background: #fff;
+    overflow-x: hidden;
 }
 #main{
     background: #fff;
+     width: 100%;
+    overflow-x: hidden;
 }
 
 div,p,dl,header,footer,dt,dd,ul,ol,em,s,strong,i,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,blockquote{
