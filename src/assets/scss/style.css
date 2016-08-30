@@ -1,12 +1,16 @@
 header{
     position: fixed;
-    background: #fff;
+    background: transparent;
     z-index: 100;
     left: 0;
     top:0;
 }
 .header_inner{
     padding: 0.2rem 0.3rem;
+    max-width: 576px;
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
 }
 .header_info{
     height: 0.44rem;
