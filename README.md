@@ -1,4 +1,10 @@
 
+# 基于vue 的豆瓣 手机站
+
+#线上访问地址：www.jimstyle.cn
+
+
+
 ```
 npm install
 ```
