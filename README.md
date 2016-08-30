@@ -3,7 +3,7 @@
 
 ## 线上访问地址：www.jimstyle.cn
 
-
+![image](https://github.com/eltonchan/vueApp/blob/master/src/assets/images/douban.gif)
 
 ```
 npm install
