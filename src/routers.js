@@ -8,34 +8,40 @@ export default function(router){
                 require(['./views/index.vue'],resolve);
             }
         },
-        '/sort':{				//分类
-            name:'sort',
+        '/movie':{				//电影
+            name:'movie',
             component: function(resolve){
-                require(['./views/sort.vue'],resolve);
+                require(['./views/movie.vue'],resolve);
             }
         },
-        '/item/:id':{               //专题
-            name:'item',
-            component: function(resolve){
-                require(['./views/item.vue'],resolve);
-            }
-        },
-        '/sort/:id':{               //专题
+        '/topic/:id':{               //专题
             name:'topic',
             component: function(resolve){
                 require(['./views/topic.vue'],resolve);
             }
         },
-        '/cart':{				//购物车
-            name:'cart',
+        '/book':{				//书籍
+            name:'book',
             component: function(resolve){
-                require(['./views/cart.vue'],resolve);
+                require(['./views/book.vue'],resolve);
             }
         },
-        '/me':{				//我的
-            name:'me',
+        '/network':{				//广播
+            name:'network',
             component: function(resolve){
-                require(['./views/me.vue'],resolve);
+                require(['./views/network.vue'],resolve);
+            }
+        },
+        '/group':{				//小组
+            name:'group',
+            component: function(resolve){
+                require(['./views/group.vue'],resolve);
+            }
+        },
+        '/search':{				//搜索
+            name:'search',
+            component: function(resolve){
+                require(['./views/search.vue'],resolve);
             }
         }
     })
