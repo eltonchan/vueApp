@@ -1,10 +1,10 @@
 <template>
     <nav>
         <ul class="clearfix">
-            <li><a >影院热映</a></li>
-            <li><a >影院热映</a></li>
-            <li><a >影院热映</a></li>
-            <li><a >影院热映</a></li>
+            <li><a >影院锟斤拷映</a></li>
+            <li><a >影院锟斤拷映</a></li>
+            <li><a >影院锟斤拷映</a></li>
+            <li><a >影院锟斤拷映</a></li>
         </ul>
     </nav>
     <div class="section">
@@ -12,12 +12,13 @@
     </div>
 </template>
 <script>
-    export default {
-        data(){
-            return {
+export default {
+    data(){
+        return {
 
-            }
+        }
     }
+}
 </script>
 
 

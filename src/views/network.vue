@@ -27,12 +27,12 @@
 </template>
 
 <script>
-    export default {
-        replace:true,
-        props: {
+export default {
+    replace:true,
+    props: {
 
-        },
-        data(){
+    },
+    data(){
         return {
             info:{}
         }
@@ -40,58 +40,58 @@
     ready(){
 
     }
-    }
+}
 </script>
 
 <style lang="sass">
-    .movie_item{
+.movie_item{
         padding:0.1rem 0.3rem;
-    div.movie_head{
-        padding: 0.2rem 0;
-    .movie_head_l{
-        color: #111;
-        font-size:16px;
-    }
-    .movie_head_r{
-        color: #42bd56;
-        font-size:14px;
-    }
-    }
-    div.scroll_pic{
-    ul{
-        position: relative;
-        overflow-x: auto;
-        overflow-y: hidden;
-    li{
-        display: inline-block;
-        width: 33%;
-        box-sizing: border-box;
-        padding: 5px;
-        height: 3.4rem;
-    a{
-        display: block;
-        width: 100%;
-        height: 100%;
-    div.pic{
-        width: 100%;
-        height: 2.8rem;
-    }
-    h3{
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        word-wrap: normal;
-        color: #111;
-        font-size: 15px;
-        padding: 0.2rem 0;
-        text-align: center;
-    }
+        div.movie_head{
+            padding: 0.2rem 0;
+            .movie_head_l{
+                color: #111;
+                font-size:16px;
+            }
+            .movie_head_r{
+                color: #42bd56;
+                font-size:14px;
+            }
+        }
+        div.scroll_pic{
+            ul{
+                position: relative;
+                overflow-x: auto;
+                overflow-y: hidden;
+                li{
+                    display: inline-block;
+                    width: 33%;
+                    box-sizing: border-box;
+                    padding: 5px;
+                    height: 3.4rem;
+                    a{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        div.pic{
+                            width: 100%;
+                            height: 2.8rem;
+                        }
+                    h3{
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        word-wrap: normal;
+                        color: #111;
+                        font-size: 15px;
+                        padding: 0.2rem 0;
+                        text-align: center;
+                    }
 
+                }
+            }
+        }
     }
-    }
-    }
-    }
-    }
+}
 </style>
 
 

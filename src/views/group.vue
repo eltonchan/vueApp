@@ -1,10 +1,16 @@
 <template>
-    <div class="group" transition="expand">
+    <div
+        class="group"
+        transition="expand">
         <ul>
-            <li class="group_item" v-for="item in info">
+            <li
+                class="group_item"
+                v-for="item in info">
                 <h3>{{item.title}}</h3>
                 <ul class="group_list">
-                    <li class="ui-bottom-line" v-for="list in item.arr">
+                    <li
+                        class="ui-bottom-line"
+                        v-for="list in item.arr">
                         <a>
                             <div class="ui-flex-align">
                                 <div class="ui-flex-left group_list_l">
@@ -26,12 +32,12 @@
 </template>
 
 <script>
-    export default {
-        replace:true,
-        props: {
+export default {
+    replace:true,
+    props: {
 
-        },
-        data(){
+    },
+    data(){
         return {
             info:{}
         }
@@ -42,7 +48,7 @@
             self.info = res.data.info;
         })
     }
-    }
+}
 </script>
 
 <style lang="sass">

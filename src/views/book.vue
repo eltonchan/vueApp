@@ -3,12 +3,12 @@
 </template>
 
 <script>
-    export default {
-        replace:true,
-        props: {
+export default {
+    replace:true,
+    props: {
 
-        },
-        data(){
+    },
+    data(){
         return {
             info:{}
         }
@@ -22,7 +22,7 @@
     components:{
         "nvCell":require('../components/cell.vue')
     }
-    }
+}
 </script>
 
 

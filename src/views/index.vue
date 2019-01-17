@@ -14,23 +14,23 @@
     </div>
 </template>
 <script>
-    export default {
-        data(){
-            return {
-                info:{}
-            }
-        },
-        ready(){
-            let self = this;
-            this.$http.get('/src/v1/list.json').then((res) => {
-                // success callback
-                self.info = res.data.info;
-            })
-        },
-        components:{
-            "nvList":require('../components/list.vue')
+export default {
+    data(){
+        return {
+            info:{}
         }
+    },
+    ready(){
+        let self = this;
+        this.$http.get('/src/v1/list.json').then((res) => {
+            // success callback
+            self.info = res.data.info;
+        })
+    },
+    components:{
+        "nvList":require('../components/list.vue')
     }
+}
 </script>
 
 

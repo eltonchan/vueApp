@@ -61,12 +61,12 @@
 </template>
 
 <script>
-    export default {
-        replace:true,
-        props: {
+export default {
+    replace:true,
+    props: {
 
-        },
-        data(){
+    },
+    data(){
         return {
             info:{}
         }
@@ -79,7 +79,7 @@
             history.back();
         }
     }
-    }
+}
 </script>
 
 <style lang="sass">

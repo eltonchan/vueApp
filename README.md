@@ -1,7 +1,7 @@
 
 ## 基于vue 的豆瓣 手机站
 
-## 线上访问地址：www.jimstyle.cn
+**这是三年前的项目，刚学vue的时候写的，线上地址已经失效，项目不在维护**
 
 ![image](https://github.com/eltonchan/vueApp/blob/master/src/assets/images/douban.gif)
 

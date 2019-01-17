@@ -16,24 +16,24 @@
 </template>
 
 <script>
-    export default {
-        replace:true,
-        props: {
+export default {
+    replace:true,
+    props: {
 
-        },
-        data(){
+    },
+    data(){
         return {
             info:{}
         }
     },
     ready(){
         console.log(this.$route.params.id); //当前路径的id
-        }
     }
+}
 </script>
 
 <style lang="sass">
-    .topic_title{
+.topic_title{
         margin: 20px 0.3rem 5px;
         font-size: 20px;
         line-height: 28px;
